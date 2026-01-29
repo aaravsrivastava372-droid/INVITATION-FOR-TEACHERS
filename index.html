@@ -149,16 +149,10 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const intro = document.getElementById('intro');
             const playButton = document.getElementById('playButton');
-            const video = document.getElementById('farewellVideo');
 
             playButton.addEventListener('click', function() {
-                intro.classList.add('hidden');
-                video.classList.add('playing');
-                video.play().catch(function(error) {
-                    console.log('Autoplay failed:', error);
-                });
+                window.open('Farewell-video.mp4', '_blank');
             });
         });
     </script>
